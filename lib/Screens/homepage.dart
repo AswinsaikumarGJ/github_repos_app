@@ -13,7 +13,6 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   @override
   void initState() {
-    print("ffff");
     super.initState();
       Provider.of<HomePageFunctions>(context, listen: false).firstLoad();
      Provider.of<HomePageFunctions>(context, listen: false).controller = ScrollController()..addListener(() {
